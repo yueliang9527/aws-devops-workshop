@@ -25,7 +25,7 @@ You need your own GitHub account to complete this workshop. If you don't have on
 
 - On the following implementation, you will access and work your own copy of this repo. (ex. https://github.com/\<your-github-username>/aws-devops-workshop)
  
---
+---
 
 ### Login to AWS Console
 - Go to your AWS Console
@@ -34,7 +34,7 @@ You need your own GitHub account to complete this workshop. If you don't have on
 
 - Select AWS region: **N.Virginia**      
 
---
+---
 
 ### Create EC2 Key Pair
 You can skip below steps if you already have existing **EC2 Key Pair** in **N.Virginia**.
@@ -47,7 +47,7 @@ You can skip below steps if you already have existing **EC2 Key Pair** in **N.Vi
 
 - Save the **.pem** file to your local folder
 
---
+---
 
 ### Using CloudFormation to Create CodeDeploy Environment
 
@@ -89,7 +89,7 @@ At this step, you will launch ELB, Auto Scaling Group and EC2 instances as your 
 
 - Wait until the status is **CREATE_COMPLETE** (takes around 5 minutes). 
 
---
+---
 
 ### Create CodeDeploy Project
 
@@ -122,7 +122,7 @@ At this step, you will launch ELB, Auto Scaling Group and EC2 instances as your 
 
 - If you trying to use web browser to access the endpoint, it will show you "Server Not Found" page, since we haven't deploy our web application yet.
 	 
---
+---
 
 ### Create CodePipeline
 
@@ -181,7 +181,8 @@ At this step, you will launch ELB, Auto Scaling Group and EC2 instances as your 
 
 - Open your browser and access web application using ELB end point (ex http://MyWebAppLoadBalancer-xxxxxxxxxx.us-east-1.elb.amazonaws.com).
 
---
+---
+
 ### Change Source Code and Trigger Pipeline
 
 Now you will change and commit the source code in GitHub, which will automatically trigger CodePipeline to build and deploy your application.
@@ -210,13 +211,13 @@ Now you will change and commit the source code in GitHub, which will automatical
 
 - You can changes has been deployed to your environment.
 
---
+---
 
 # Add Production Environment in CodePipeline Stage
 
 Currently the pipeline have source, build, and staging environment. We will add production environment where there are manual approval before the pipeline deploy your updated web application to production environment using Blue/green deployment.
 
---
+
 
 ### Using CloudFormation to Create Production CodeDeploy Environment
 
@@ -238,7 +239,7 @@ Currently the pipeline have source, build, and staging environment. We will add 
 
 - If you trying to use web browser to access the endpoint, it will show you "Server Not Found" page, since we haven't deploy our web application yet.
 
---
+---
 
 ### Create SNS Topic Subscription
 
@@ -270,7 +271,7 @@ Currently the pipeline have source, build, and staging environment. We will add 
 
 - Go back to the SNS, and your email has been successfully subscribed to this topic (have **Subscription ID**)
 
---
+---
 
 ### Create CodeDeploy DeploymentGroup for Production
 
@@ -304,7 +305,7 @@ Currently the pipeline have source, build, and staging environment. We will add 
 
 - Click **Create deployment group**
 
---
+---
 
 ### Modify CodePipeline - Add Manual Approval and Production Stage
 
@@ -362,7 +363,7 @@ Currently the pipeline have source, build, and staging environment. We will add 
 
 - On warning dialog, click **Save and continue**
 
---
+---
 
 ### Deploy to Production
 
@@ -385,7 +386,7 @@ Currently the pipeline have source, build, and staging environment. We will add 
 
 - Once completed, access your production environment using production ELB end point (ex. http://MyWebAppProdLoadBalancer-xxxxxxxxxx.us-east-1.elb.amazonaws.com)
 
---
+---
 
 ### Cleanup
 
@@ -419,8 +420,7 @@ Currently the pipeline have source, build, and staging environment. We will add 
 	- Choose **Delete log group** from the **Actions** drop-down.
 	- Choose **Yes, Delete** when prompted to confirm.
 
-
---
+---
 
 ### Future Enhancement
 - +Unit test (Junit)
