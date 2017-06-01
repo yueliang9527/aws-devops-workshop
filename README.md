@@ -23,7 +23,7 @@ You need your own GitHub account to complete this workshop. If you don't have on
 
 - Click **Fork** (at top right) to have your own copy of this repo
 
-- On the following implementation, you will access and work your own copy of this repo. (ex. https://github.com/\<your-github-username>/aws-devops-workshop)
+- On the following implementation, you will access and work your own copy of this repo. (ex. https://github.com/your-github-username/aws-devops-workshop)
  
 ---
 
@@ -189,7 +189,7 @@ Now you will change and commit the source code in GitHub, which will automatical
 
 - Login to your GitHub 
 
-- Locate **index.jsp** in your repo (https://github.com/\<your-user-name>/aws-devops-workshop/blob/master/src/main/webapp/WEB-INF/pages/index.jsp)
+- Locate **index.jsp** in your repo (https://github.com/your-user-name/aws-devops-workshop/blob/master/src/main/webapp/WEB-INF/pages/index.jsp)
 	- replace \<your-user-name> with yours
 
 - Click **Edit this file** icon at the top right of the page (pencil icon)
