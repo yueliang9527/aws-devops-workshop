@@ -83,7 +83,7 @@
     <% } %>
     <div class="jumbotron">
       <h1>Bespoke Suits for Dogs</h1>
-      <p><i>I am testing devops of aws, Add Product Stage</i></p>
+      <p><i>I am testing devops of aws, 中寰国际</i></p>
     </div>
     <div class="page-header">
       <h1>Our Products</h1>
